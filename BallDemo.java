@@ -1,27 +1,33 @@
 import java.awt.Color;
+import java.util.ArrayList;
 
 /**
  * Class BallDemo - a short demonstration showing animation with the 
  * Canvas class. 
  *
- * @author Michael Kölling and David J. Barnes
- * @version 2011.07.31
+ * @Kristen Oringer
+ * @version 4.6.15
  */
 
 public class BallDemo   
 {
     private Canvas myCanvas;
+    private ArrayList<BoxBall>ballList;
 
     /**
      * Create a BallDemo object. Creates a fresh canvas and makes it visible.
      */
-    public BallDemo()
+    public BallDemo(int numOfBalls)
     {
         myCanvas = new Canvas("Ball Demo", 600, 500);
+        ballList = new ArrayList<BoxBall>();
+        for(int i = 0; i < numOfBalls; i++)
+        {
+            ballList.add(new BoxBall(0, 0, 600, 500, Color.BLUE, myCanvas));
+        }
     }
 
     public void boxBounce(){
-        BoxBall ball = new BoxBall(50, 50, 16, Color.BLUE, myCanvas);
         ball.draw();
         
            while(true) {
