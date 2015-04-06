@@ -1,6 +1,6 @@
 #BlueJ class context
-comment0.params=lWall\ rWall\ tWall\ bWall\ drawingCanvas
-comment0.target=BoxBall(int,\ int,\ int,\ int,\ Canvas)
+comment0.params=lWall\ rWall\ tWall\ bWall\ color\ drawingCanvas
+comment0.target=BoxBall(int,\ int,\ int,\ int,\ java.awt.Color,\ Canvas)
 comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ BoxBall\r\n\r\n\ @param\ xPos\ \ the\ horizontal\ coordinate\ of\ the\ ball\r\n\ @param\ yPos\ \ the\ vertical\ coordinate\ of\ the\ ball\r\n\ @param\ ballDiameter\ \ the\ diameter\ (in\ pixels)\ of\ the\ ball\r\n\ @param\ ballColor\ \ the\ color\ of\ the\ ball\r\n\ @param\ drawingCanvas\ \ the\ canvas\ to\ draw\ this\ ball\ on\r\n
 comment1.params=r\ g\ b
 comment1.target=void\ Color(int,\ int,\ int)

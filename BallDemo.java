@@ -23,7 +23,7 @@ public class BallDemo
         ballList = new ArrayList<BoxBall>();
         for(int i = 0; i < numOfBalls; i++)
         {
-            ballList.add(new BoxBall(0, 0, 600, 500, , myCanvas));
+            ballList.add(new BoxBall(0, 0, 600, 500, Color.GREEN, myCanvas));
             
         }
     }
